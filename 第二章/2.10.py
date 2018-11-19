@@ -14,7 +14,6 @@ print(d[5])
 d.appendleft('a')
 print(d)
 
-
 from queue import Queue
 
 q = Queue(1)
@@ -24,5 +23,9 @@ q.put('a')   #  当queue满的时候调用put，该线程会阻塞，直到queue
 print(q.get(0))
 
 # queue的task_done和join方法在多线程中很有用
+
+
+# 扁平序列,str,bytes,bytearray,array.array,memoryview都是要求序列元素是同一种类型的
+# 容器序列list,tuple,collections.deque等
 
 
