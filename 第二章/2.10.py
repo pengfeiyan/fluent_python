@@ -33,3 +33,4 @@ print(q.get(0))
 #3.6  i is j == False,   3.7 i is j == True
 i = 257
 j = 258-1
+print(i is j)
