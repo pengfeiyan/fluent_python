@@ -15,13 +15,13 @@ print(codes)
 codes = [ ord(symbol) for symbol in symbols ]
 print(codes)
 
-# 列表推导式不会出现变量的泄漏
+# 列表推导式不会出现变量的泄漏 ,  有列表推导，集合推导，字典推导。
 x = 'ABC'
 dummy = [ord(x) for x in x]
 print(x)
 print(dummy)
 
-# 利用生成器表达式计算笛卡尔积，生成器表达式的优先是不会一次性产出所有的情况
+# 利用生成器表达式计算笛卡尔积，生成器表达式的优先是不会一次性产出所有的情况，一次性的。
 colors = ['blank', 'white']
 sizes = ['S', 'M' ,'L']
 

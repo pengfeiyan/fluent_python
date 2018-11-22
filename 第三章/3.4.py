@@ -20,7 +20,6 @@ class A(dict):
 
     def __init__(self,l):
         self._l = l
-        print(self._l)
 
     def __missing__(self, key):
         return "missing"

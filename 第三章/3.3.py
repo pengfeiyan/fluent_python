@@ -16,10 +16,8 @@ for i in l:
 print(d)
 
 '''
-d.setdefault(i,0) 
- 
+d[i] = d.setdefault(i,0) + 1 
  =====>
-
 if i not in d.keys():
     d[i] = 1
 else:
