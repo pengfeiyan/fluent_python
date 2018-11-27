@@ -38,5 +38,5 @@ for name,param in sig.parameters.items():
 2、VAR_POSITIONAL            定位参数元组，*args
 3、VAR_KEYWORD               关键字参数字典 **kwargs
 4、KEYWORD_ONLY              仅限关键字参数 *,params
-5、POSITIONAL_ONLY           目前python语法不支持
+5、POSITIONAL_ONLY           仅限定位参数，目前python语法不支持
 """
