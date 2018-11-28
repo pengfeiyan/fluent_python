@@ -56,3 +56,10 @@ print(upcase(s))
 hiphenate = methodcaller('replace',' ','-')
 print(hiphenate(s))
 
+'''
+冻结参数
+'''
+from operator import mul
+from functools import partial
+triple = partial(mul,3,4)
+print(triple())
