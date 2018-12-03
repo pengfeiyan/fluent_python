@@ -41,13 +41,12 @@ def f4(a):
     print(b)
 dis(f4)
 
-
 x = 1
 def foo():
     x = 2
     def innerfoo():
-        x = 3               #此处改动：注释掉
-        print('locals ', x)
+        x = 3
+        print('locals ', x) # 打印的是3，如果x用nonlocal，打印的是2;如果用global，打印的是1
     innerfoo()
     print('enclosing function locals ', x)
 foo()

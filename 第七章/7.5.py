@@ -22,6 +22,9 @@ print("自由变量:",a.__code__.co_freevars)
 python命名空间的查找顺序是LEGB：local->enclosed->global->built-in
 '''
 
+'''
+nonlocal关键字，明确声明此变量不是本地变量，用这个关键字就可以修改自由变量了
+'''
 def make_avg():
     count = 0
     total = 0
